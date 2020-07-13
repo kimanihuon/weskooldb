@@ -1,0 +1,5 @@
+docker run --net=host --name mongo-weskool -it -d -v \
+~/projs/weskool/DockerWeskool/db/nodes/db:/data/db \
+-e MONGO_INITDB_ROOT_USERNAME=mongoadmin \
+-e MONGO_INITDB_ROOT_PASSWORD=secret \
+mongo
